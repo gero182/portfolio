@@ -4,13 +4,11 @@
 }
 
 body {
-    background: #2e0943;
+    background: rgb(78, 18, 111);
     /* background: rgb(153, 153, 153); */
-    /* background-image: url(https://www.stockvault.net/data/2015/09/16/178253/preview16.jpg);
+     /* background-image: url(https://www.stockvault.net/data/2015/09/16/178253/preview16.jpg);
     background-repeat: no-repeat round ;
-    
     background-attachment: fixed; */
-
 }
 
 .container {
@@ -18,13 +16,12 @@ body {
 
     display: grid;
     grid-template-columns: .5fr 2fr .5fr;
-    grid-template-rows: 45px 1fr 60px;
+    grid-template-rows: 45px 1fr 70px;
     min-height: 100vh;
     grid-template-areas:
-        ". header ."
+        ". header header"
         "aside content ."
         "footer footer footer"
-
 }
 
 @media (width < 500px) {
@@ -33,13 +30,14 @@ body {
             "header header header"
             "content content content"
             "footer footer footer"
+            
     }
 
 }
 
 .header {
     background: rgb(11, 11, 11); 
-    border-radius: 20px;
+    /* border-radius: 15px; */
     opacity: 70%;
     /* border: 2px solid rgb(174, 45, 148); */
     grid-area: header;
@@ -48,7 +46,6 @@ body {
     justify-content: center;
     position: fixed;
     width: 100%;
-   
 
 }
 
@@ -62,11 +59,12 @@ body {
     text-decoration: none;
     /* font-family: ; */
     font-size: 19px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
+    transition-duration: 1s;
 }
 
 .header a:hover {
-    color: rgb(51, 160, 179);
+    color: rgb(4, 100, 117);
 }
 
 
@@ -102,15 +100,14 @@ body {
 }
 
 .content {
-    /* background: #d4d4d4; */
-    background-image: url(https://www.stockvault.net/data/2015/09/16/178253/preview16.jpg);
+    background: #d4d4d4;
+    /* background-image: url(https://www.stockvault.net/data/2015/09/16/178253/preview16.jpg);
     background-repeat: no-repeat  ;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center; */
     border-radius: 5px;
     grid-area: content;
-    border: 2px solid rgb(237, 0, 0);
-    height: 2000px;
+    height: 1500px; 
 }
 
 .content #Imagen {
@@ -118,7 +115,7 @@ body {
     margin: 20px;
     max-width: 100%;
     height: 250px;
-    border: 1px solid whitesmoke;
+    /* border: 1px solid whitesmoke; */
     
 }
 
@@ -136,7 +133,8 @@ body {
 img {
     border-radius: 50%;
     width: 32%;
-    max-height: 250px;
+    max-height: 200px;
+    box-shadow: 0 0 15px rgb(0, 0, 0);
 }
 
 @media (width < 500px) {
@@ -147,34 +145,42 @@ img {
 }
 
 h1 {
-    max-width: 90%;
+    max-width: 95%;
     max-height: 50%;
-    padding: 20px;
+    padding: 5px;
     margin: 20px;
-    color: #fcfcfc;
-    border: 1px solid rgb(225, 223, 225);
+    color: #010101;
+    /* border-bottom: 1px solid rgb(0, 0, 0); */
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(60, 0, 92);
+    /* background: rgb(95, 44, 123); */
 }
 
 
 @media (width < 500px){
     h1{
-        margin: 20px;
+        margin: 5px;
         padding: 15px;
         max-width: 100%;
+        text-indent: 20px;
+        text-align: center;
+        align-items: center;
+        border-bottom: 1px solid rgb(0, 0, 0);
         /* box-shadow: 0px 0px 30px  #070707; */
     }
 }
+
 h2 {
     max-width: 90%;
     max-height: 50%;
-    padding: 30px;
+    padding: 20px;
     margin: 20px;
-    color: #ffffff;
+    color: #010101;
     border: 1px solid rgb(238, 238, 238);
+    font-size: 19px;
+    text-align: center;
+    word-spacing: 2px;
 }
 @media (width < 500px){
     h2{
@@ -182,7 +188,7 @@ h2 {
         margin-top: 50px;
         padding: 25px;
         max-width: 100%;
-        box-shadow: 0px 0px 30px  #070707;
+        box-shadow: 0px 0px 10px  #070707;
     }
 }
 
@@ -197,7 +203,7 @@ h2 {
         margin-top: 50px;
         padding: 25px;
         max-width: 100%;
-        box-shadow: 0px 0px 30px  #070707;
+        box-shadow: 0px 0px 10px  #070707;
     }
 }
 
@@ -212,7 +218,7 @@ h2 {
         margin-top: 50px;
         padding: 25px;
         max-width: 100%;
-        box-shadow: 0px 0px 30px  #070707;
+        box-shadow: 0px 0px 10px  #070707;
     }
 }
 
@@ -227,7 +233,7 @@ h2 {
         margin-top: 50px;
         padding: 25px;
         max-width: 100%;
-        box-shadow: 0px 0px 30px  #070707;
+        box-shadow: 0px 0px 10px  #070707;
     }
 }
 
@@ -235,6 +241,7 @@ h2 {
     border: 2px solid whitesmoke;
     max-width: 100%;
     /* height: 100px; */
+    
 }
 @media (width < 500px){
     .D{
@@ -242,7 +249,7 @@ h2 {
         margin-top: 50px;
         padding: 25px;
         max-width: 100%;
-        box-shadow: 0px 0px 30px  #070707;
+        box-shadow: 0px 0px 10px  #070707;
     }
 }
 
