@@ -5,21 +5,23 @@
 
 body {
     /* background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(100,43,115,1) 0%, rgba(4,0,4,1) 90% ); */
-    
+
     /* background-image: url(https://www.stockvault.net/data/2015/09/16/178253/preview16.jpg);
     background-repeat: no-repeat round ;
     background-attachment: fixed; */
-    background: #2b5876;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #4e4376, #2b5876);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #2b5876;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4e4376, #2b5876);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4e4376, #2b5876);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
-.container {
-    /* background:; */
 
+.container {
     display: grid;
     grid-template-columns: .5fr 2fr .5fr;
-    grid-template-rows: 48px 1fr 70px;
+    grid-template-rows: 48px 1fr 90px;
     min-height: 100vh;
     grid-template-areas:
         ". header header"
@@ -33,13 +35,13 @@ background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, F
             "header header header"
             "content content content"
             "footer footer footer"
-            
+
     }
 
 }
 
 .header {
-    background: rgb(11, 11, 11); 
+    background: rgb(11, 11, 11);
     /* border-radius: 15px; */
     opacity: 70%;
     /* border: 2px solid rgb(174, 45, 148); */
@@ -96,21 +98,22 @@ background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, F
         height: 400px;
         max-width: 50%;
         position: fixed;
-        background: rgb(11, 11, 11); 
+        background: rgb(11, 11, 11);
         border-radius: 5px;
         opacity: 70%;
     }
 }
 
 .content {
-    /* background: ; */
     /* background-image: url(https://www.stockvault.net/data/2020/05/17/275511/preview16.jpg) ;
     background-repeat: no-repeat  ;
     background-attachment: fixed;
     background-position: center; */
-    border-radius: 5px;
     grid-area: content;
-    height: 1500px; 
+    height: 1500px;
+    border: 1px solid white;
+    border-radius: 15px;
+    box-shadow: 20px 0px 0px #303030;
 }
 
 .content #Imagen {
@@ -119,10 +122,10 @@ background: linear-gradient(to right, #4e4376, #2b5876); /* W3C, IE 10+/ Edge, F
     max-width: 100%;
     height: 200px;
     /* border: 1px solid whitesmoke; */
-    
+
 }
 
-@media (width < 500px) { 
+@media (width < 500px) {
     .content #Imagen {
         display: flex;
         margin: 0px;
@@ -153,7 +156,6 @@ h1 {
     padding: 5px;
     margin: 20px;
     color: #ffffff;
-    /* border: 1px solid rgb(255, 255, 255); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,8 +164,8 @@ h1 {
 }
 
 
-@media (width < 500px){
-    h1{
+@media (width < 500px) {
+    h1 {
         margin: 5px;
         padding: 15px;
         max-width: 100%;
@@ -180,12 +182,15 @@ h2 {
     padding: 20px;
     margin: 20px;
     color: #ffffff;
-    font-size: 19px;
+    font-size: 16px;
     text-align: center;
-    word-spacing: 2px;
+    font-family: Tt Commons Pro Variable, sans-serif;
+    /* word-spacing: 2px; */
+    text-wrap: balance;
 }
-@media (width < 500px){
-    h2{
+
+@media (width < 500px) {
+    h2 {
         margin: 5px;
         margin-top: 10px;
         padding: 20px;
@@ -201,13 +206,16 @@ h2 {
     max-width: 100%;
     height: 100px;
 }
-@media (width < 500px){
-    .A{
+
+@media (width < 500px) {
+    .A {
         margin: 5px;
         margin-top: 50px;
         padding: 25px;
         max-width: 100%;
-        box-shadow: 0px 0px 10px  #070707;
+        /* background: #fefefe;
+        height: 250px; */
+        box-shadow: 0px 0px 10px #070707;
     }
 }
 
@@ -216,13 +224,14 @@ h2 {
     max-width: 100%;
     height: 100px;
 }
-@media (width < 500px){
-    .B{
+
+@media (width < 500px) {
+    .B {
         margin: 5px;
         margin-top: 50px;
         padding: 25px;
         max-width: 100%;
-        box-shadow: 0px 0px 10px  #070707;
+        box-shadow: 0px 0px 10px #070707;
     }
 }
 
@@ -231,13 +240,14 @@ h2 {
     max-width: 100%;
     height: 100px;
 }
-@media (width < 500px){
-    .C{
+
+@media (width < 500px) {
+    .C {
         margin: 5px;
         margin-top: 50px;
         padding: 25px;
         max-width: 100%;
-        box-shadow: 0px 0px 10px  #070707;
+        box-shadow: 0px 0px 10px #070707;
     }
 }
 
@@ -245,20 +255,21 @@ h2 {
     border: 2px solid whitesmoke;
     max-width: 100%;
     /* height: 100px; */
-    
+
 }
-@media (width < 500px){
-    .D{
+
+@media (width < 500px) {
+    .D {
         margin: 5px;
         margin-top: 50px;
         padding: 25px;
         max-width: 100%;
-        box-shadow: 0px 0px 10px  #070707;
+        box-shadow: 0px 0px 10px #070707;
     }
 }
 
 .footer {
-    background: rgb(0, 128, 126);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='90' preserveAspectRatio='none' viewBox='0 0 1440 90'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1620%26quot%3b)' fill='none'%3e%3crect width='1440' height='90' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M -74.00932697386476%2c44 C -58.81%2c49.4 -28.41%2c72.2 1.9906730261352443%2c71 C 32.39%2c69.8 47.59%2c39.8 77.99067302613524%2c38 C 108.39%2c36.2 123.59%2c61.6 153.99067302613525%2c62 C 184.39%2c62.4 199.59%2c40.6 229.99067302613525%2c40 C 260.39%2c39.4 275.59%2c60.4 305.99067302613525%2c59 C 336.39%2c57.6 351.59%2c31.2 381.99067302613525%2c33 C 412.39%2c34.8 427.59%2c72.6 457.99067302613525%2c68 C 488.39%2c63.4 503.59%2c10.2 533.9906730261353%2c10 C 564.39%2c9.8 579.59%2c62.6 609.9906730261353%2c67 C 640.39%2c71.4 655.59%2c33.2 685.9906730261353%2c32 C 716.39%2c30.8 731.59%2c61.2 761.9906730261353%2c61 C 792.39%2c60.8 807.59%2c32 837.9906730261353%2c31 C 868.39%2c30 883.59%2c58.8 913.9906730261353%2c56 C 944.39%2c53.2 959.59%2c16.6 989.9906730261353%2c17 C 1020.39%2c17.4 1035.59%2c59.8 1065.9906730261353%2c58 C 1096.39%2c56.2 1111.59%2c5 1141.9906730261353%2c8 C 1172.39%2c11 1187.59%2c72.8 1217.9906730261353%2c73 C 1248.39%2c73.2 1263.59%2c10.2 1293.9906730261353%2c9 C 1324.39%2c7.8 1339.59%2c60.8 1369.9906730261353%2c67 C 1400.39%2c73.2 1431.99%2c43.8 1445.9906730261353%2c40 C 1459.99%2c36.2 1441.2%2c46.4 1440%2c48' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -44.56234157291761%2c56 C -29.36%2c49.6 1.04%2c20.6 31.43765842708239%2c24 C 61.84%2c27.4 77.04%2c72 107.4376584270824%2c73 C 137.84%2c74 153.04%2c32.2 183.4376584270824%2c29 C 213.84%2c25.8 229.04%2c55.8 259.4376584270824%2c57 C 289.84%2c58.2 305.04%2c37 335.4376584270824%2c35 C 365.84%2c33 381.04%2c47 411.4376584270824%2c47 C 441.84%2c47 457.04%2c28.4 487.4376584270824%2c35 C 517.84%2c41.6 533.04%2c79.6 563.4376584270824%2c80 C 593.84%2c80.4 609.04%2c41.2 639.4376584270824%2c37 C 669.84%2c32.8 685.04%2c60.6 715.4376584270824%2c59 C 745.84%2c57.4 761.04%2c27 791.4376584270824%2c29 C 821.84%2c31 837.04%2c70.8 867.4376584270824%2c69 C 897.84%2c67.2 913.04%2c23.8 943.4376584270824%2c20 C 973.84%2c16.2 989.04%2c52.4 1019.4376584270824%2c50 C 1049.84%2c47.6 1065.04%2c6.8 1095.4376584270824%2c8 C 1125.84%2c9.2 1141.04%2c53 1171.4376584270824%2c56 C 1201.84%2c59 1217.04%2c22.4 1247.4376584270824%2c23 C 1277.84%2c23.6 1293.04%2c58.2 1323.4376584270824%2c59 C 1353.84%2c59.8 1369.04%2c28 1399.4376584270824%2c27 C 1429.84%2c26 1467.33%2c50.8 1475.4376584270824%2c54 C 1483.55%2c57.2 1447.09%2c45.2 1440%2c43' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -98.98500939978209%2c42 C -83.79%2c47 -53.39%2c69.2 -22.985009399782083%2c67 C 7.41%2c64.8 22.61%2c33.2 53.014990600217914%2c31 C 83.41%2c28.8 98.61%2c55.6 129.0149906002179%2c56 C 159.41%2c56.4 174.61%2c28.8 205.0149906002179%2c33 C 235.41%2c37.2 250.61%2c80.6 281.0149906002179%2c77 C 311.41%2c73.4 326.61%2c17.4 357.0149906002179%2c15 C 387.41%2c12.6 402.61%2c62.4 433.0149906002179%2c65 C 463.41%2c67.6 478.61%2c26.8 509.0149906002179%2c28 C 539.41%2c29.2 554.61%2c74 585.014990600218%2c71 C 615.41%2c68 630.61%2c16.6 661.014990600218%2c13 C 691.41%2c9.4 706.61%2c52.4 737.014990600218%2c53 C 767.41%2c53.6 782.61%2c17.4 813.014990600218%2c16 C 843.41%2c14.6 858.61%2c47 889.014990600218%2c46 C 919.41%2c45 934.61%2c9.8 965.014990600218%2c11 C 995.41%2c12.2 1010.61%2c52.4 1041.014990600218%2c52 C 1071.41%2c51.6 1086.61%2c8.8 1117.014990600218%2c9 C 1147.41%2c9.2 1162.61%2c47 1193.014990600218%2c53 C 1223.41%2c59 1238.61%2c38.6 1269.014990600218%2c39 C 1299.41%2c39.4 1314.61%2c59.4 1345.014990600218%2c55 C 1375.41%2c50.6 1402.02%2c17.2 1421.014990600218%2c17 C 1440.01%2c16.8 1436.2%2c46.6 1440%2c54' stroke='rgba(51%2c 121%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1620'%3e%3crect width='1440' height='90' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
     border-radius: 5px;
     grid-area: footer;
     border: 1px solid rgb(255, 255, 255);
